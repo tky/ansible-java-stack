@@ -1,0 +1,4 @@
+- src: geerlingguy.nginx
+- src: kamaln7.swapfile
+- src: geerlingguy.java
+- src: geerlingguy.mysql
