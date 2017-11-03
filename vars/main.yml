@@ -2,3 +2,4 @@
 java_packages:
   - java-1.8.0-openjdk
 mysql_root_password: "{{ mysql_password }}"
+nginx_yum_repo_enabled: false

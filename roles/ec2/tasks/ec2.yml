@@ -47,5 +47,6 @@
       Name: "{{ ec2_name }}"
     count_tag:
       Name: "{{ ec2_name }}"
-      exact_count: 1
-      wait: true
+    exact_count: 1
+    wait: true
+

@@ -27,3 +27,9 @@ password is `1234ttt`
 ansible-playbook -i vagrant.py --ask-vault-pass playbook.yml
 ```
 and put valut password `1234ttt`
+
+## Launch EC2 Instance
+
+```ruby
+ansible-playbook -i inventories/production site.yml
+```

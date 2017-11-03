@@ -6,7 +6,4 @@
     - vars/ec2.yml
 
   roles:
-      - { role: ec2, tags: [ec2] }
-
-
-
+    - { role: ec2, tags: [ec2] }

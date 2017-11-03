@@ -1,5 +1,5 @@
 ---
-- name: provisining for anyway environment
+- name: provisining for anyway environment to the vagrant.
   hosts: all
   become: true
 
@@ -8,7 +8,7 @@
     - vars/secret.yml.vault
 
   roles:
-    - role: galaxy/kamaln7.swapfile
-    - role: galaxy/geerlingguy.nginx
-    - role: galaxy/geerlingguy.java
-    - role: galaxy/geerlingguy.mysql
+    - { role: galaxy/kamaln7.swapfile, tags: [app] }
+    - { role: galaxy/geerlingguy.nginx, tags: [app] }
+    - { role: galaxy/geerlingguy.java, tags: [app] }
+    - { role: galaxy/geerlingguy.mysql, tags: [app] }
