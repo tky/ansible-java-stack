@@ -9,7 +9,7 @@ $ pip install -r requirements.txt
 ## Install galaxy roles
 
 ```ruby
-ansible-galaxy install -p ./roles/galaxy -r galaxy-requirements.txt
+ansible-galaxy install -p ./roles/galaxy -r galaxy-requirements.yml
 
 ```
 
