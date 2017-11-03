@@ -7,6 +7,12 @@
     - vars/main.yml
     - vars/secret.yml.vault
 
+  tasks:
+    - name: install dependencies
+      yum: name={{ item }} state=latest
+      with_items:
+        - MySQL-python27
+
   roles:
     - { role: galaxy/kamaln7.swapfile, tags: [app] }
     - { role: galaxy/geerlingguy.nginx, tags: [app] }
