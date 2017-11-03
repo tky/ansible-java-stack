@@ -8,7 +8,7 @@
     - vars/secret.yml.vault
 
   roles:
-    # - role: galaxy/kamaln7.swapfile
+    - role: galaxy/kamaln7.swapfile
     - role: galaxy/geerlingguy.nginx
     - role: galaxy/geerlingguy.java
     - role: galaxy/geerlingguy.mysql
