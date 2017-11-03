@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+
+  vars_files:
+    - vars/ec2.yml
+
+  roles:
+      - { role: ec2, tags: [ec2] }
+
+
+
